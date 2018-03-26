@@ -14,7 +14,7 @@ $(document).ready(function(){
 			var longitude = cLoc.coords.longitude;
 			//console.log(latitude, longitude);
 			//call to api
-			var url = 'http://api.apixu.com/v1/forecast.json?key=17c8f8d91e5945a1be2110848182503&q=';
+			var url = 'https://api.apixu.com/v1/forecast.json?key=17c8f8d91e5945a1be2110848182503&q=';
 			$.getJSON(url + latitude + ',' + longitude, function(data){
 				//console.log(data);
 				//JSON.stringify turns a javascript object into json text and stores that json text in a string
