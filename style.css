@@ -1,0 +1,27 @@
+* {
+		margin: 0;
+		padding: 0;
+	}
+.container-fluid {
+    padding: 0;
+}
+
+.header-part.jumbotron.text-center {
+    background: #43a3f7d9;
+    margin-bottom:  0;
+}
+
+.weatherDet.text-center {
+    padding: 30px;
+    background: #63acfb;
+    color: #fff;
+}
+.col-md-4.inf1 {
+    margin-bottom: 20px;
+}
+
+hr.short {
+    width: 100px;
+    border-top: 2px solid #fff;
+    margin: 8px auto;
+}
