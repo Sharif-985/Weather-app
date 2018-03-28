@@ -72,11 +72,11 @@ $(document).ready(function(){
 				var yes = true;
 				$('#switch').on('click', function(){
 					if(yes){
-						$('#info3').html(temp_f + '&#8451');
+						$('#info3').html(temp_f + '&#8457');
 						$('#switch').html('Show in Celsius');
 						yes = false;
 					}else{
-						$('#info3').html(temp + '&#8457');
+						$('#info3').html(temp + '&#8451');
 						$('#switch').html('Show in Farenheight');
 						yes = true;
 					};
