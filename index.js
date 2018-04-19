@@ -16,7 +16,7 @@ $(document).ready(function(){
 			//call to api
 			var url = 'https://api.apixu.com/v1/forecast.json?key=17c8f8d91e5945a1be2110848182503&q=';
 			$.getJSON(url + latitude + ',' + longitude, function(data){
-				//console.log(data);
+				console.log(data);
 				//JSON.stringify turns a javascript object into json text and stores that json text in a string
 				var data = JSON.stringify(data);
 				//JSON.parse turns a string of JSON text into a javascript object
@@ -41,19 +41,19 @@ $(document).ready(function(){
 				//change background image when weather change
 				if(temp < 18){
 					$('.weatherDet').css({
-						backgroundImage: 'url(https://cdn.pixabay.com/photo/2018/02/02/22/28/nature-3126513_960_720.jpg)',
+						backgroundImage: 'url(img/coldday.jpg)',
 						backgroundSize: 'cover'
 					});
 					$('#weate_info').html('It\'s a pretty cold day today..');
 				}else if (temp > 10 && temp < 28){
 					$('.weatherDet').css({
-						backgroundImage: 'url(https://cdn.pixabay.com/photo/2018/03/24/08/58/nature-3256068_960_720.jpg)',
+						backgroundImage: 'url(img/sunnyday.jpg)',
 						backgroundSize: 'cover'
 					});
 					$('#weate_info').html('It\'s sunny day today..');
 				}else{
 					$('.weatherDet').css({
-						backgroundImage: 'url(https://cdn.pixabay.com/photo/2017/01/12/06/00/island-1973839_960_720.jpg)',
+						backgroundImage: 'url(img/hotday.jpg)',
 						backgroundSize: 'cover'
 					});
 					$('#weate_info').html('It\'s hot day today..');
@@ -72,11 +72,11 @@ $(document).ready(function(){
 				var yes = true;
 				$('#switch').on('click', function(){
 					if(yes){
-						$('#info3').html(temp_f + '&#8457');
+						$('#info3').html(temp_f + '&#8451');
 						$('#switch').html('Show in Celsius');
 						yes = false;
 					}else{
-						$('#info3').html(temp + '&#8451');
+						$('#info3').html(temp + '&#8457');
 						$('#switch').html('Show in Farenheight');
 						yes = true;
 					};
