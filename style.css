@@ -9,6 +9,7 @@
 .header-part.jumbotron.text-center {
     background: #43a3f7d9;
     margin-bottom:  0;
+    border-radius: 0;
 }
 
 .weatherDet.text-center {
@@ -19,9 +20,23 @@
 .col-md-4.inf1 {
     margin-bottom: 20px;
 }
+.inf_in {
+    padding: 20px 5px;
+    background: #1010107d;
+    border-radius: 10px;
+}
 
 hr.short {
     width: 100px;
     border-top: 2px solid #fff;
     margin: 8px auto;
+}
+.display-4 {
+    color: #fff;
+}
+h3#addressed {
+    color: #eeff07;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
